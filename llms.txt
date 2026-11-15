@@ -1,0 +1,22 @@
+# Conttab
+
+> Contabilidade para MEI e pequenas empresas, com o contador Lucas Lorran. Diferencial: a Conttab emite as notas fiscais de serviço dos clientes. Atendimento direto pelo WhatsApp (+5511943684466).
+
+## Serviços
+- Abertura de empresas
+- Emissão de notas fiscais
+- Desenquadramento do MEI
+- Regularização de CNPJ
+- Parcelamento de débitos
+- Pendências na Receita Federal
+- Alteração contratual
+- Encerramento de empresas
+
+## Como funciona
+1. O cliente chama no WhatsApp.
+2. O contador estuda o CNPJ: situação na Receita, impostos e regime.
+3. A Conttab cuida das notas fiscais, dos impostos e da burocracia.
+
+## Páginas
+- [Início](https://linikerwambaster.github.io/conttab-contabilidade/)
+- [Política de privacidade](https://linikerwambaster.github.io/conttab-contabilidade/privacidade/)

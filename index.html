@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0f0e26">
+<title>Contador Lucas Lorran | Conttab: suas notas fiscais emitidas por nós</title>
+<meta name="description" content="Contabilidade para MEI e pequenas empresas com atendimento direto pelo WhatsApp. A Conttab emite as suas notas fiscais, estuda os seus impostos e regulariza o seu CNPJ.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://linikerwambaster.github.io/conttab-contabilidade/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Conttab">
+<meta property="og:url" content="https://linikerwambaster.github.io/conttab-contabilidade/">
+<meta property="og:title" content="Contador Lucas Lorran | Conttab: suas notas fiscais emitidas por nós">
+<meta property="og:description" content="Contabilidade para MEI e pequenas empresas com atendimento direto pelo WhatsApp. A Conttab emite as suas notas fiscais, estuda os seus impostos e regulariza o seu CNPJ.">
+<meta property="og:image" content="https://linikerwambaster.github.io/conttab-contabilidade/img/compartilhar.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/lucas.webp" fetchpriority="high">
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"AccountingService","@id":"https://linikerwambaster.github.io/conttab-contabilidade/#conttab","name":"Conttab","url":"https://linikerwambaster.github.io/conttab-contabilidade/","image":"https://linikerwambaster.github.io/conttab-contabilidade/img/compartilhar.jpg","logo":"https://linikerwambaster.github.io/conttab-contabilidade/img/icone-512.png","telephone":"+5511943684466","slogan":"Seu CNPJ em boas mãos","employee":{"@type":"Person","name":"Lucas Lorran","jobTitle":"Contador"},"hasOfferCatalog":{"@type":"OfferCatalog","name":"Serviços contábeis","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Abertura de empresas"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Emissão de notas fiscais"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Desenquadramento do MEI"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Regularização de CNPJ"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Parcelamento de débitos"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Pendências na Receita Federal"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Alteração contratual"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Encerramento de empresas"}}]}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Vocês emitem as minhas notas fiscais?","acceptedAnswer":{"@type":"Answer","text":"Sim. Esse é o nosso diferencial: a emissão das suas notas fiscais de serviço fica com a gente, e você não precisa abrir sistema nenhum."}},{"@type":"Question","name":"Atendem MEI?","acceptedAnswer":{"@type":"Answer","text":"Sim. Cuidamos do MEI e, quando ele passa do limite, fazemos o desenquadramento para a empresa seguir regular."}},{"@type":"Question","name":"Acho que pago imposto demais. Dá para rever?","acceptedAnswer":{"@type":"Answer","text":"Dá. O Lucas faz um estudo da sua empresa: como ela está, quanto paga de imposto e qual regime faz mais sentido. Às vezes compensa até voltar para o MEI."}},{"@type":"Question","name":"Tenho dívida ou pendência na Receita. Tem jeito?","acceptedAnswer":{"@type":"Answer","text":"Fazemos o parcelamento de débitos tributários e a regularização das pendências junto à Receita Federal."}},{"@type":"Question","name":"Como é o atendimento?","acceptedAnswer":{"@type":"Answer","text":"Pelo WhatsApp, direto com o contador. Você conta o que precisa e recebe a resposta de quem cuida da sua empresa."}},{"@type":"Question","name":"Quanto custa?","acceptedAnswer":{"@type":"Answer","text":"Depende do tipo e do tamanho da empresa. Chame no WhatsApp: o Lucas entende o seu caso e passa o valor."}}]}]</script>
+<style>/* Conttab | Lucas Lorran. Base: DESIGN.md do Mercury (getdesign.md) com as cores da marca.
+   Mundo "noite" no topo e nos blocos de destaque, mundo claro no resto. Botões pílula, cartões suaves, pouco texto. */
+:root{
+  --noite:#0f0e26; --noite2:#18173a; --marinho:#2b2878; --vermelho:#e3263b; --vermelho2:#ff4a5c;
+  --lavanda:#edecfb; --tela:#fbfbfd; --branco:#fff; --tinta:#1d1b45; --tinta2:#55507e; --nevoa:#c3c2d6; --claro:#ededf3;
+  --zap:#25d366; --verde:#1fae5b; --r-pilula:40px; --r-card:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Geist",system-ui,sans-serif;background:var(--tela);color:var(--tinta);-webkit-font-smoothing:antialiased;line-height:1.5}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.pular{position:absolute;left:-999px}.pular:focus{left:12px;top:12px;z-index:99;background:#fff;padding:8px 12px;border-radius:8px}
+.marca{font-family:"Poppins",sans-serif;font-weight:700;letter-spacing:-.02em;font-size:26px;line-height:1}
+.marca .on{color:var(--vermelho)}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.rotulo{display:inline-block;font-size:14px;font-weight:500;letter-spacing:.3px;color:var(--tinta2);margin-bottom:10px}
+.noite .rotulo,.topo .rotulo{color:var(--nevoa)}
+h2{font-weight:500;font-size:clamp(30px,4.6vw,46px);line-height:1.1;letter-spacing:-.01em;margin:0}
+.sub2{color:var(--tinta2);font-size:18px;font-weight:300;margin:12px 0 0;max-width:560px}
+.noite .sub2{color:var(--nevoa)}
+.on{color:var(--vermelho)}
+
+/* botões */
+.pilula{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:50px;padding:0 24px;border-radius:var(--r-pilula);font:500 16px "Geist",sans-serif;cursor:pointer;border:0;transition:transform .15s,background .2s,box-shadow .2s;white-space:nowrap}
+.pilula svg{width:20px;height:20px;flex:none}
+.pilula.principal{background:var(--vermelho);color:#fff;box-shadow:0 10px 30px -8px rgba(227,38,59,.7)}
+.pilula.principal:hover{background:var(--vermelho2);transform:translateY(-2px)}
+.pilula.vidro{background:rgba(175,178,206,.16);color:var(--claro);backdrop-filter:blur(8px)}
+.pilula.vidro:hover{background:rgba(175,178,206,.26)}
+.pilula.pequena{height:40px;padding:0 18px;font-size:15px}
+
+/* ---------- topo (noite) ---------- */
+.topo{position:relative;overflow:hidden;background:var(--noite);color:var(--claro);isolation:isolate}
+.aurora{position:absolute;inset:-20%;z-index:-1;filter:blur(70px);opacity:.75;pointer-events:none}
+.aurora i{position:absolute;border-radius:50%;mix-blend-mode:screen;animation:flutua 18s ease-in-out infinite alternate}
+.aurora i:nth-child(1){width:46vw;height:46vw;left:48%;top:8%;background:radial-gradient(circle,#3a35a8 0,transparent 65%)}
+.aurora i:nth-child(2){width:34vw;height:34vw;left:62%;top:38%;background:radial-gradient(circle,rgba(227,38,59,.55) 0,transparent 65%);animation-duration:22s}
+.aurora i:nth-child(3){width:40vw;height:40vw;left:5%;top:45%;background:radial-gradient(circle,#211f63 0,transparent 65%);animation-duration:26s}
+@keyframes flutua{to{transform:translate(-6%,5%) scale(1.12)}}
+.grao{position:absolute;inset:0;z-index:-1;opacity:.06;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:3px 3px;pointer-events:none}
+nav.menu{display:flex;align-items:center;justify-content:space-between;max-width:1160px;margin:0 auto;padding:18px 24px}
+nav.menu .links{display:none;gap:6px}
+nav.menu .links a{padding:10px 16px;border-radius:var(--r-pilula);font-size:15px;color:var(--nevoa);transition:background .2s,color .2s}
+nav.menu .links a:hover{background:rgba(175,178,206,.14);color:#fff}
+
+.heroi{display:grid;grid-template-columns:1fr;gap:28px;max-width:1160px;margin:0 auto;padding:22px 24px 0}
+.selo{display:inline-flex;align-items:center;gap:10px;padding:6px 14px 6px 6px;border-radius:var(--r-pilula);background:rgba(175,178,206,.12);font-size:14px;color:var(--claro)}
+.selo img{width:30px;height:30px;border-radius:50%;object-fit:cover}
+.selo b{font-weight:600}
+.selo .crc{color:var(--nevoa)}
+h1{font-weight:500;font-size:clamp(34px,6vw,58px);line-height:1.06;letter-spacing:-.01em;margin:18px 0 0;color:#fff}
+h1 .grifo{position:relative;white-space:nowrap;z-index:0}
+h1 .grifo:after{content:"";position:absolute;left:-1%;right:-1%;bottom:-2px;height:.22em;border-radius:4px;background:var(--vermelho);opacity:.85;z-index:-1;transform:scaleX(0);transform-origin:left;animation:grifa .7s 1.1s cubic-bezier(.6,0,.2,1) forwards}
+@keyframes grifa{to{transform:scaleX(1)}}
+.resposta{margin:18px 0 0;font-size:clamp(18px,2.2vw,22px);line-height:1.4;color:var(--claro);font-weight:300;max-width:540px}
+.resposta b{font-weight:600;color:#fff}
+.acoes{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.garantias{display:flex;flex-wrap:wrap;gap:8px 18px;margin:22px 0 0;padding:0;list-style:none;color:var(--nevoa);font-size:14px}
+.garantias li{display:flex;align-items:center;gap:8px}
+.garantias li:before,.lista-ok li:before{content:"";width:16px;height:16px;border-radius:50%;flex:none;background:rgba(37,211,102,.18) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 12.5l4.2 4.2L19 7' fill='none' stroke='%2325d366' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/11px no-repeat}
+
+.palco{position:relative;height:clamp(420px,62vw,600px);display:flex;justify-content:center;align-items:flex-end}
+.anel{position:absolute;left:50%;bottom:12%;width:min(78vw,430px);aspect-ratio:1;transform:translateX(-50%);border-radius:50%;
+  border:clamp(18px,3.4vw,30px) solid var(--vermelho);box-shadow:0 0 80px 10px rgba(227,38,59,.35),inset 0 0 60px rgba(227,38,59,.35)}
+.anel:after{content:"";position:absolute;inset:-14%;border-radius:50%;border:1px solid rgba(237,236,251,.12)}
+.lucas{position:relative;z-index:2;height:100%;width:auto;max-width:100%;object-fit:contain;object-position:bottom;filter:drop-shadow(0 30px 40px rgba(0,0,0,.45))}
+.palco:after{content:"";position:absolute;left:0;right:0;bottom:0;height:22%;z-index:3;background:linear-gradient(transparent,var(--noite))}
+.cartao{position:absolute;z-index:4;background:rgba(24,23,58,.74);backdrop-filter:blur(14px);border:1px solid rgba(237,236,251,.12);border-radius:16px;
+  padding:12px 14px;color:var(--claro);font-size:13px;box-shadow:0 20px 50px -20px rgba(0,0,0,.7);animation:boia 6s ease-in-out infinite}
+@keyframes boia{50%{transform:translateY(-8px)}}
+.cartao small{display:flex;justify-content:space-between;gap:8px;color:var(--nevoa);font-size:11px;letter-spacing:.3px;text-transform:uppercase;margin-bottom:6px}
+.cartao small i{font-style:normal;opacity:.7;text-transform:none}
+.nf{left:0;top:14%;width:228px}
+.nf .linha{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-bottom:1px dashed rgba(237,236,251,.14)}
+.nf .linha span:first-child{color:var(--nevoa)}
+.nf .linha span:last-child{overflow:hidden;white-space:nowrap;width:0;text-align:right;animation:digita .7s steps(16) forwards}
+.nf .linha:nth-of-type(1) span:last-child{animation-delay:.9s}.nf .linha:nth-of-type(2) span:last-child{animation-delay:1.6s}.nf .linha:nth-of-type(3) span:last-child{animation-delay:2.3s}
+@keyframes digita{to{width:136px}}
+.nf .carimbo{margin-top:8px;display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:20px;background:rgba(37,211,102,.16);color:#6ff2a4;font-weight:600;opacity:0;transform:scale(1.6) rotate(-6deg);animation:carimba .35s 3s cubic-bezier(.2,1.6,.4,1) forwards}
+@keyframes carimba{to{opacity:1;transform:scale(1) rotate(-4deg)}}
+.liga{right:0;top:30%;display:flex;align-items:center;gap:12px}
+.chave{position:relative;width:54px;height:30px;border-radius:30px;background:#3a3960;flex:none;animation:fundoOn .4s 3.6s forwards}
+.chave:after{content:"";position:absolute;left:4px;top:4px;width:22px;height:22px;border-radius:50%;background:#fff;animation:bolinhaOn .4s 3.6s cubic-bezier(.3,1.4,.5,1) forwards}
+@keyframes fundoOn{to{background:var(--vermelho)}}
+@keyframes bolinhaOn{to{transform:translateX(24px)}}
+.liga .txt b{display:block;font-size:14px}
+.liga .txt span{color:var(--nevoa)}
+.liga .txt .on{color:var(--vermelho2);font-weight:700}
+.imposto{right:4%;bottom:20%}
+.imposto b{font-size:15px}
+
+.faixa{background:var(--noite);border-top:1px solid rgba(237,236,251,.08);overflow:hidden;padding:18px 0}
+.trilho{display:flex;gap:42px;width:max-content;animation:corre 40s linear infinite;color:var(--nevoa);font-size:15px}
+.trilho span{display:flex;align-items:center;gap:42px}
+.trilho span:after{content:"";width:7px;height:7px;border-radius:50%;background:var(--vermelho)}
+@keyframes corre{to{transform:translateX(-50%)}}
+
+/* ---------- seções ---------- */
+.sec{padding:96px 0}
+.noite{background:var(--noite);color:var(--claro)}
+.noite h2{color:#fff}
+.lavanda{background:var(--lavanda)}
+.cabeca{max-width:640px;margin-bottom:40px}
+
+/* qual é o seu caso */
+.casos{display:grid;grid-template-columns:1fr;gap:12px}
+.caso{position:relative;display:flex;align-items:center;gap:16px;padding:20px 20px;background:var(--branco);border:1px solid #e7e6f3;border-radius:var(--r-card);transition:transform .2s,box-shadow .2s,border-color .2s;overflow:hidden}
+.caso:hover{transform:translateY(-3px);box-shadow:0 18px 40px -22px rgba(43,40,120,.45);border-color:#d5d3ee}
+.caso .ico{width:46px;height:46px;border-radius:14px;background:var(--lavanda);display:grid;place-items:center;flex:none;color:var(--marinho);transition:background .2s,color .2s}
+.caso:hover .ico{background:var(--vermelho);color:#fff}
+.caso .ico svg{width:22px;height:22px}
+.caso b{display:block;font-weight:600;font-size:17px}
+.caso span{display:block;color:var(--tinta2);font-size:14.5px;margin-top:2px}
+.caso .seta{margin-left:auto;color:var(--tinta2);transition:transform .2s,color .2s;flex:none}
+.caso:hover .seta{transform:translateX(4px);color:var(--vermelho)}
+.caso.destaque{border-color:rgba(227,38,59,.35);background:linear-gradient(135deg,#fff,#fff4f5)}
+.caso.destaque .tag{position:absolute;top:10px;right:12px;font-size:11px;font-weight:600;color:var(--vermelho);letter-spacing:.3px;text-transform:uppercase}
+
+/* diferencial: interruptor */
+.dif{display:grid;grid-template-columns:1fr;gap:40px;align-items:center}
+.botao-on{display:inline-flex;align-items:center;gap:16px;margin-top:28px;padding:10px 20px 10px 10px;border-radius:60px;background:rgba(175,178,206,.12);border:1px solid rgba(237,236,251,.12);color:#fff;font:500 16px "Geist",sans-serif;cursor:pointer}
+.botao-on .chave-g{position:relative;width:72px;height:40px;border-radius:40px;background:#3a3960;transition:background .35s}
+.botao-on .chave-g:after{content:"";position:absolute;left:5px;top:5px;width:30px;height:30px;border-radius:50%;background:#fff;transition:transform .35s cubic-bezier(.3,1.4,.5,1)}
+.botao-on[aria-pressed="true"] .chave-g{background:var(--vermelho)}
+.botao-on[aria-pressed="true"] .chave-g:after{transform:translateX(32px)}
+.painel{background:var(--noite2);border:1px solid rgba(237,236,251,.1);border-radius:24px;padding:26px;display:grid;gap:12px}
+.painel .item{display:flex;align-items:center;gap:14px;padding:16px;border-radius:14px;background:rgba(237,236,251,.04);transition:background .4s}
+.painel .bola{width:12px;height:12px;border-radius:50%;background:var(--vermelho);box-shadow:0 0 0 5px rgba(227,38,59,.18);flex:none;transition:background .4s,box-shadow .4s}
+.painel .item p{margin:0;font-size:16px}
+.painel .item p em{display:block;font-style:normal;color:var(--nevoa);font-size:13.5px}
+.painel .depois{display:none}
+.painel.ligado .antes{display:none}.painel.ligado .depois{display:block}
+.painel.ligado .bola{background:var(--zap);box-shadow:0 0 0 5px rgba(37,211,102,.18)}
+.painel.ligado .item{background:rgba(37,211,102,.06)}
+.painel .topo-p{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--nevoa);padding:0 4px 6px}
+.painel .estado{font-weight:700;color:var(--vermelho2)}
+.painel.ligado .estado{color:#6ff2a4}
+
+/* como funciona */
+.passos{display:grid;grid-template-columns:1fr;gap:14px;counter-reset:p}
+.passo{position:relative;padding:28px 24px;background:var(--branco);border:1px solid #e7e6f3;border-radius:var(--r-card)}
+.passo .n{font-family:"Poppins",sans-serif;font-weight:700;font-size:15px;color:var(--vermelho);display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:#fff1f2}
+.passo h3{margin:16px 0 6px;font-size:20px;font-weight:600}
+.passo p{margin:0;color:var(--tinta2)}
+
+/* quem é o Lucas */
+.sobre{display:grid;grid-template-columns:1fr;gap:34px;align-items:center}
+.sobre .foto{position:relative;max-width:420px;border-radius:28px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(43,40,120,.55)}
+.sobre .foto img{width:100%;aspect-ratio:1;object-fit:cover}
+.sobre .foto .crc-tag{position:absolute;left:14px;bottom:14px;background:rgba(15,14,38,.78);backdrop-filter:blur(8px);color:#fff;font-size:13px;padding:8px 12px;border-radius:12px}
+.sobre blockquote{margin:22px 0 0;font-size:24px;line-height:1.3;font-weight:500;color:var(--marinho)}
+.lista-ok{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:10px}
+.lista-ok li{display:flex;align-items:center;gap:10px;color:var(--tinta)}
+
+/* dúvidas */
+.faq{max-width:780px}
+.faq details{border-bottom:1px solid #e3e2f0;padding:6px 0}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 0;font-size:18px;font-weight:500}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";font-size:26px;font-weight:300;color:var(--tinta2);transition:transform .25s}
+.faq details[open] summary:after{transform:rotate(45deg);color:var(--vermelho)}
+.faq details p{margin:0 0 18px;color:var(--tinta2);max-width:680px}
+
+/* chamada final */
+.final{text-align:center;position:relative;overflow:hidden;isolation:isolate}
+.final .anel-f{position:absolute;left:50%;top:50%;width:520px;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;border:26px solid var(--vermelho);opacity:.14;z-index:-1}
+.final h2{font-size:clamp(34px,5.4vw,56px)}
+.final p{color:var(--nevoa);margin:14px auto 28px;max-width:460px}
+
+footer{background:var(--noite);color:var(--nevoa);border-top:1px solid rgba(237,236,251,.08);padding:36px 0 110px;font-size:14px}
+footer .wrap{display:grid;gap:18px}
+footer .marca{color:#fff;font-size:22px}
+footer nav{display:flex;flex-wrap:wrap;gap:8px 20px}
+footer a:hover{color:#fff}
+
+.zap{position:fixed;right:18px;bottom:18px;z-index:50;width:60px;height:60px;border-radius:50%;background:var(--zap);display:grid;place-items:center;box-shadow:0 12px 30px -6px rgba(37,211,102,.6);animation:pulsa 2.4s infinite}
+.zap svg{width:32px;height:32px;fill:#fff}
+@keyframes pulsa{0%{box-shadow:0 0 0 0 rgba(37,211,102,.5)}70%{box-shadow:0 0 0 16px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+
+/* revelar ao rolar */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
+.rv.in{opacity:1;transform:none}
+
+/* aviso de cookies */
+.cookies{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;max-width:560px;margin:0 auto;background:var(--noite2);color:var(--claro);border:1px solid rgba(237,236,251,.14);border-radius:18px;padding:16px;font-size:14px;line-height:1.45;box-shadow:0 20px 50px -10px rgba(0,0,0,.5);display:none}
+.cookies.on{display:block}
+.cookies a{color:#fff;text-decoration:underline}
+.cookies .acoes-c{display:flex;gap:10px;margin-top:12px}
+.cookies button{flex:1;height:42px;border-radius:var(--r-pilula);border:0;font:500 15px "Geist",sans-serif;cursor:pointer}
+.cookies .sim{background:var(--vermelho);color:#fff}.cookies .nao{background:rgba(175,178,206,.18);color:var(--claro)}
+body.com-aviso .zap{bottom:150px}
+
+@media(min-width:760px){
+  .casos{grid-template-columns:repeat(2,1fr)}
+  .passos{grid-template-columns:repeat(3,1fr)}
+}
+@media(min-width:900px){
+  nav.menu .links{display:flex}
+  .heroi{grid-template-columns:1.05fr .95fr;align-items:center;padding-top:30px}
+  .texto{padding-bottom:70px}
+  .palco{height:620px}
+  .nf{left:-6%}
+  .casos{grid-template-columns:repeat(3,1fr)}
+  .dif{grid-template-columns:1fr 1fr}
+  .sobre{grid-template-columns:420px 1fr;gap:64px}
+  footer .wrap{grid-template-columns:auto 1fr auto;align-items:center}
+}
+@media(max-width:899px){
+  .cartao{font-size:12px}
+  .nf{width:196px;top:auto;bottom:24%;left:0}
+  .liga{top:auto;bottom:9%;right:0}
+  .imposto{display:none}
+  .selo .crc{display:none}
+  .sec{padding:72px 0}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .nf .linha span:last-child{width:auto}.nf .carimbo{opacity:1;transform:none}
+  .chave{background:var(--vermelho)}.chave:after{transform:translateX(24px)}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="grao" aria-hidden="true"></div>
+  <nav class="menu" aria-label="Menu principal">
+    <a href="./" class="marca" aria-label="Conttab, início">c<span class="on">On</span>ttab</a>
+    <div class="links"><a href="#casos">Serviços</a><a href="#como">Como funciona</a><a href="#lucas">Quem é o Lucas</a><a href="#duvidas">Dúvidas</a></div>
+    <a class="pilula vidro pequena wz" href="https://wa.me/5511943684466?text=Olá,%20Lucas!%20Vi%20a%20sua%20contabilidade%20pelo%20site%20e%20quero%20saber%20mais." target="_blank" rel="noopener">WhatsApp</a>
+  </nav>
+  <div class="heroi">
+    <div class="texto">
+      <span class="selo"><img src="img/lucas-rosto.jpg" alt="" width="30" height="30"><b>Lucas Lorran</b> Contador <span class="crc">· CRC a confirmar</span></span>
+      <h1>Você paga contabilidade todo mês e ainda <span class="grifo">emite a nota fiscal</span> sozinho?</h1>
+      <p class="resposta"><b>Aqui quem emite é o contador.</b> A Conttab cuida das suas notas, dos seus impostos e de tudo que a Receita pede, pra você só trabalhar.</p>
+      <div class="acoes">
+        <a class="pilula principal wz" href="https://wa.me/5511943684466?text=Olá,%20Lucas!%20Vi%20a%20sua%20contabilidade%20pelo%20site%20e%20quero%20saber%20mais." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3a.5.5 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.6 11.6 0 0 0 4.5 4c1.7.7 2.3.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg>Falar com o Lucas no WhatsApp</a>
+        <a class="pilula vidro" href="#casos">Ver serviços</a>
+      </div>
+      <ul class="garantias"><li>Fala direto com o contador</li><li>Notas fiscais emitidas por nós</li><li>Estudo do seu imposto</li></ul>
+    </div>
+    <div class="palco">
+      <div class="anel" aria-hidden="true"></div>
+      <img class="lucas" src="img/lucas.webp" alt="Lucas Lorran, contador da Conttab" width="900" height="1125" fetchpriority="high">
+      <div class="cartao nf" aria-hidden="true"><small>Nota fiscal de serviço <i>exemplo</i></small>
+        <div class="linha"><span>Tomador</span><span>Ana Ribeiro Studio</span></div>
+        <div class="linha"><span>Serviço</span><span>Consultoria de marca</span></div>
+        <div class="linha"><span>Emitida por</span><span>Conttab</span></div>
+        <span class="carimbo">✓ Emitida</span></div>
+      <div class="cartao liga" aria-hidden="true"><span class="chave"></span><span class="txt"><b>Sua empresa</b><span>está <span class="on">ON</span>: em dia</span></span></div>
+      <div class="cartao imposto" aria-hidden="true"><small>Estudo do imposto</small><b>MEI, Simples ou outro regime?</b><br><span style="color:var(--nevoa)">a gente compara pra você</span></div>
+    </div>
+  </div>
+  <div class="faixa" aria-hidden="true"><div class="trilho"><span>Abertura de empresas</span><span>Emissão de notas fiscais</span><span>Desenquadramento do MEI</span><span>Regularização de CNPJ</span><span>Parcelamento de débitos</span><span>Pendências na Receita Federal</span><span>Alteração contratual</span><span>Encerramento de empresas</span><span>Abertura de empresas</span><span>Emissão de notas fiscais</span><span>Desenquadramento do MEI</span><span>Regularização de CNPJ</span><span>Parcelamento de débitos</span><span>Pendências na Receita Federal</span><span>Alteração contratual</span><span>Encerramento de empresas</span></div></div>
+</header>
+
+<main id="conteudo">
+<!-- QUAL É O SEU CASO -->
+<section id="casos" class="sec" aria-labelledby="t-casos">
+  <div class="wrap">
+    <div class="cabeca rv">
+      <span class="rotulo">Por onde começar</span>
+      <h2 id="t-casos">Qual é o seu caso?</h2>
+      <p class="sub2">Toque no seu caso e fale direto com o Lucas no WhatsApp.</p>
+    </div>
+    <div class="casos">
+      <a class="caso rv wz destaque" href="#" data-caso="Quero que vocês emitam as minhas notas fiscais." target="_blank" rel="noopener"><span class="tag">diferencial</span><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></span><span><b>Preciso emitir nota fiscal</b><span>A emissão das suas notas fica com a gente.</span></span><svg class="seta" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="caso rv wz" href="#" data-caso="Quero abrir uma empresa." target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16M16 9h2a2 2 0 0 1 2 2v10M3 21h18M8 7h4M8 11h4M8 15h4"/></svg></span><span><b>Quero abrir minha empresa</b><span>Do CNPJ ao primeiro mês, do jeito certo.</span></span><svg class="seta" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="caso rv wz" href="#" data-caso="O meu MEI passou do limite." target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></span><span><b>Meu MEI estourou</b><span>Fazemos o desenquadramento sem susto.</span></span><svg class="seta" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="caso rv wz" href="#" data-caso="Tenho pendências ou débitos na Receita." target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg></span><span><b>Tenho pendência na Receita</b><span>Parcelamento de débitos e regularização do CNPJ.</span></span><svg class="seta" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="caso rv wz" href="#" data-caso="Quero trocar de contador." target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 2l4 4-4 4"/><path d="M3 11V9a3 3 0 0 1 3-3h15M7 22l-4-4 4-4"/><path d="M21 13v2a3 3 0 0 1-3 3H3"/></svg></span><span><b>Quero trocar de contador</b><span>A troca é simples e a gente cuida dela.</span></span><svg class="seta" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="caso rv wz" href="#" data-caso="Preciso alterar ou encerrar a minha empresa." target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></span><span><b>Alterar ou fechar empresa</b><span>Alteração contratual e encerramento.</span></span><svg class="seta" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIAL: EMPRESA NO ON -->
+<section id="diferencial" class="sec noite" aria-labelledby="t-dif">
+  <div class="wrap dif">
+    <div class="rv">
+      <span class="rotulo">O diferencial da Conttab</span>
+      <h2 id="t-dif">Sua empresa no <span class="on">ON</span></h2>
+      <p class="sub2">Muita contabilidade só manda a guia. Aqui o contador emite as suas notas, estuda os seus impostos e resolve o que a Receita pede.</p>
+      <button type="button" class="botao-on" id="botaoOn" aria-pressed="false"><span class="chave-g" aria-hidden="true"></span><span id="textoOn">Ligar a Conttab</span></button>
+    </div>
+    <div class="painel rv" id="painel" aria-live="polite">
+      <div class="topo-p"><span>Sua empresa</span><span class="estado" id="estado">OFF</span></div>
+      <div class="item"><span class="bola" aria-hidden="true"></span><p><span class="antes">Você mesmo emite as notas</span><span class="depois">A Conttab emite as suas notas<em>nota por nota, sem você abrir sistema</em></span></p></div>
+      <div class="item"><span class="bola" aria-hidden="true"></span><p><span class="antes">Imposto pago no escuro</span><span class="depois">Imposto estudado pro seu caso<em>MEI, Simples ou outro regime</em></span></p></div>
+      <div class="item"><span class="bola" aria-hidden="true"></span><p><span class="antes">Pendência esquecida na Receita</span><span class="depois">Pendências cuidadas pelo contador<em>parcelamento e regularização</em></span></p></div>
+      <div class="item"><span class="bola" aria-hidden="true"></span><p><span class="antes">Atendimento em fila</span><span class="depois">WhatsApp direto com o contador<em>fala com quem resolve</em></span></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section id="como" class="sec" aria-labelledby="t-como">
+  <div class="wrap">
+    <div class="cabeca rv">
+      <span class="rotulo">Simples assim</span>
+      <h2 id="t-como">Como funciona</h2>
+    </div>
+    <div class="passos">
+      <div class="passo rv"><span class="n">1</span><h3>Você chama no WhatsApp</h3><p>Conta o que a sua empresa precisa. Quem responde é o contador.</p></div>
+      <div class="passo rv"><span class="n">2</span><h3>O Lucas estuda o seu CNPJ</h3><p>Situação na Receita, impostos que você paga e o regime mais indicado.</p></div>
+      <div class="passo rv"><span class="n">3</span><h3>A Conttab cuida de tudo</h3><p>Notas fiscais, impostos e burocracia. Você foca no seu trabalho.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- QUEM É O LUCAS -->
+<section id="lucas" class="sec lavanda" aria-labelledby="t-lucas">
+  <div class="wrap sobre">
+    <div class="foto rv"><img src="img/lucas-real.webp" alt="Foto de Lucas Lorran, contador" width="560" height="560" loading="lazy"><span class="crc-tag">CRC a confirmar</span></div>
+    <div class="rv">
+      <span class="rotulo">Quem cuida da sua empresa</span>
+      <h2 id="t-lucas">Lucas Lorran</h2>
+      <p class="sub2">Contador à frente da Conttab. Atende cada cliente pessoalmente pelo WhatsApp e cuida da burocracia pra você focar no que faz.</p>
+      <blockquote>“Seu CNPJ em boas mãos.”</blockquote>
+      <ul class="lista-ok"><li>Emissão das suas notas fiscais</li><li>Estudo de impostos e de regime</li><li>Abertura, alteração e encerramento de empresas</li></ul>
+      <div class="acoes"><a class="pilula principal wz" href="https://wa.me/5511943684466?text=Olá,%20Lucas!%20Vi%20a%20sua%20contabilidade%20pelo%20site%20e%20quero%20saber%20mais." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3a.5.5 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.6 11.6 0 0 0 4.5 4c1.7.7 2.3.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg>Falar com o Lucas</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- DÚVIDAS -->
+<section id="duvidas" class="sec" aria-labelledby="t-faq">
+  <div class="wrap">
+    <div class="cabeca rv"><span class="rotulo">Dúvidas</span><h2 id="t-faq">Perguntas frequentes</h2></div>
+    <div class="faq rv">
+      <details><summary>Vocês emitem as minhas notas fiscais?</summary><p>Sim. Esse é o nosso diferencial: a emissão das suas notas fiscais de serviço fica com a gente, e você não precisa abrir sistema nenhum.</p></details>
+      <details><summary>Atendem MEI?</summary><p>Sim. Cuidamos do MEI e, quando ele passa do limite, fazemos o desenquadramento para a empresa seguir regular.</p></details>
+      <details><summary>Acho que pago imposto demais. Dá para rever?</summary><p>Dá. O Lucas faz um estudo da sua empresa: como ela está, quanto paga de imposto e qual regime faz mais sentido. Às vezes compensa até voltar para o MEI.</p></details>
+      <details><summary>Tenho dívida ou pendência na Receita. Tem jeito?</summary><p>Fazemos o parcelamento de débitos tributários e a regularização das pendências junto à Receita Federal.</p></details>
+      <details><summary>Como é o atendimento?</summary><p>Pelo WhatsApp, direto com o contador. Você conta o que precisa e recebe a resposta de quem cuida da sua empresa.</p></details>
+      <details><summary>Quanto custa?</summary><p>Depende do tipo e do tamanho da empresa. Chame no WhatsApp: o Lucas entende o seu caso e passa o valor.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CHAMADA FINAL -->
+<section class="sec noite final" aria-labelledby="t-final">
+  <div class="anel-f" aria-hidden="true"></div>
+  <div class="wrap rv">
+    <h2 id="t-final">Seu CNPJ em <span class="on">boas mãos</span>.</h2>
+    <p>Chame o Lucas no WhatsApp e conte o que a sua empresa precisa.</p>
+    <a class="pilula principal wz" href="https://wa.me/5511943684466?text=Olá,%20Lucas!%20Vi%20a%20sua%20contabilidade%20pelo%20site%20e%20quero%20saber%20mais." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3a.5.5 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.6 11.6 0 0 0 4.5 4c1.7.7 2.3.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg>Falar com o Lucas no WhatsApp</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a href="./" class="marca" aria-label="Conttab, início">c<span class="on">On</span>ttab</a>
+    <nav aria-label="Atalhos"><a href="#casos">Serviços</a><a href="#como">Como funciona</a><a href="#lucas">Quem é o Lucas</a><a href="#duvidas">Dúvidas</a><a href="privacidade/">Privacidade</a><a href="#" data-cookies>Cookies</a></nav>
+    <div>Conttab Contabilidade<br>Lucas Lorran, contador, CRC a confirmar</div>
+  </div>
+</footer>
+
+<a class="zap wz" href="https://wa.me/5511943684466?text=Olá,%20Lucas!%20Vi%20a%20sua%20contabilidade%20pelo%20site%20e%20quero%20saber%20mais." target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3a.5.5 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.6 11.6 0 0 0 4.5 4c1.7.7 2.3.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg></a>
+
+<div class="cookies" id="cookies" role="dialog" aria-label="Aviso de cookies">
+  Usamos cookies para medir de onde vêm as visitas e melhorar os anúncios. Você escolhe. <a href="privacidade/">Saiba mais</a>
+  <div class="acoes-c"><button class="nao" id="ck-nao" type="button">Recusar</button><button class="sim" id="ck-sim" type="button">Aceitar</button></div>
+</div>
+
+<script>window.CONTTAB = {"wpp": "5511943684466", "googleTag": "", "googleConversao": "", "metaPixel": ""};</script>
+<script src="site.js?v=1" defer></script>
+</body>
+</html>
