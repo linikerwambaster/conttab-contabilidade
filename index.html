@@ -98,23 +98,24 @@ h1 .grifo:after{content:"";position:absolute;left:-1%;right:-1%;bottom:-2px;heig
 @keyframes boia{50%{transform:translateY(-8px)}}
 .cartao small{display:flex;justify-content:space-between;gap:8px;color:var(--nevoa);font-size:11px;letter-spacing:.3px;text-transform:uppercase;margin-bottom:6px}
 .cartao small i{font-style:normal;opacity:.7;text-transform:none}
-.nf{left:0;top:14%;width:228px}
+.nf{left:0;top:42%;width:228px}
 .nf .linha{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-bottom:1px dashed rgba(237,236,251,.14)}
-.nf .linha span:first-child{color:var(--nevoa)}
+.nf .linha span:first-child{color:var(--nevoa);white-space:nowrap}
 .nf .linha span:last-child{overflow:hidden;white-space:nowrap;width:0;text-align:right;animation:digita .7s steps(16) forwards}
 .nf .linha:nth-of-type(1) span:last-child{animation-delay:.9s}.nf .linha:nth-of-type(2) span:last-child{animation-delay:1.6s}.nf .linha:nth-of-type(3) span:last-child{animation-delay:2.3s}
 @keyframes digita{to{width:136px}}
 .nf .carimbo{margin-top:8px;display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:20px;background:rgba(37,211,102,.16);color:#6ff2a4;font-weight:600;opacity:0;transform:scale(1.6) rotate(-6deg);animation:carimba .35s 3s cubic-bezier(.2,1.6,.4,1) forwards}
 @keyframes carimba{to{opacity:1;transform:scale(1) rotate(-4deg)}}
-.liga{right:0;top:30%;display:flex;align-items:center;gap:12px}
+.liga{right:0;top:44%;display:flex;align-items:center;gap:12px}
 .chave{position:relative;width:54px;height:30px;border-radius:30px;background:#3a3960;flex:none;animation:fundoOn .4s 3.6s forwards}
 .chave:after{content:"";position:absolute;left:4px;top:4px;width:22px;height:22px;border-radius:50%;background:#fff;animation:bolinhaOn .4s 3.6s cubic-bezier(.3,1.4,.5,1) forwards}
 @keyframes fundoOn{to{background:var(--vermelho)}}
 @keyframes bolinhaOn{to{transform:translateX(24px)}}
+@keyframes bolinhaOnP{to{transform:translateX(20px)}}
 .liga .txt b{display:block;font-size:14px}
 .liga .txt span{color:var(--nevoa)}
 .liga .txt .on{color:var(--vermelho2);font-weight:700}
-.imposto{right:4%;bottom:20%}
+.imposto{right:2%;bottom:12%}
 .imposto b{font-size:15px}
 
 .faixa{background:var(--noite);border-top:1px solid rgba(237,236,251,.08);overflow:hidden;padding:18px 0}
@@ -234,16 +235,22 @@ body.com-aviso .zap{bottom:150px}
   .heroi{grid-template-columns:1.05fr .95fr;align-items:center;padding-top:30px}
   .texto{padding-bottom:70px}
   .palco{height:620px}
-  .nf{left:-6%}
+  .nf{left:-2%}
   .casos{grid-template-columns:repeat(3,1fr)}
   .dif{grid-template-columns:1fr 1fr}
   .sobre{grid-template-columns:420px 1fr;gap:64px}
   footer .wrap{grid-template-columns:auto 1fr auto;align-items:center}
 }
+@media(min-width:1200px){.nf{left:-12%}}
 @media(max-width:899px){
   .cartao{font-size:12px}
-  .nf{width:196px;top:auto;bottom:24%;left:0}
-  .liga{top:auto;bottom:9%;right:0}
+  /* celular: nota compacta e os dois cartões lado a lado em cima dos braços */
+  .nf{width:auto;top:auto;bottom:5%;left:0;padding:10px 12px}
+  .nf .linha{display:none}
+  .nf small{margin-bottom:4px}
+  .nf .carimbo{margin-top:0}
+  .liga{top:auto;bottom:25%;right:0;padding:10px 12px;gap:10px}
+  .liga .chave{width:44px;height:24px}.liga .chave:after{width:18px;height:18px;left:3px;top:3px;animation-name:bolinhaOnP}
   .imposto{display:none}
   .selo .crc{display:none}
   .sec{padding:72px 0}
