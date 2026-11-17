@@ -18,5 +18,5 @@
 3. A Conttab cuida das notas fiscais, dos impostos e da burocracia.
 
 ## Páginas
-- [Início](https://linikerwambaster.github.io/conttab-contabilidade/)
-- [Política de privacidade](https://linikerwambaster.github.io/conttab-contabilidade/privacidade/)
+- [Início](https://conttab.com.br/)
+- [Política de privacidade](https://conttab.com.br/privacidade/)
