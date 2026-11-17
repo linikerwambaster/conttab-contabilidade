@@ -1,4 +1,4 @@
-// Conttab | Lucas Lorran: WhatsApp com mensagem pronta (diz de onde a pessoa veio), interruptor ON,
+// Conttab: WhatsApp com mensagem pronta (diz de onde a pessoa veio), interruptor ON,
 // revelar ao rolar e cookies (Google e Meta só carregam depois do "Aceitar").
 (function () {
   var C = window.CONTTAB || {};
@@ -13,7 +13,7 @@
   } catch (e) { origem = origem || 'pelo site'; }
 
   function linkZap(caso) {
-    var msg = 'Olá, Lucas! Vi a sua contabilidade ' + origem + (caso ? '. ' + caso : ' e quero saber mais.');
+    var msg = 'Olá! Vi a Conttab ' + origem + (caso ? '. ' + caso : ' e quero saber mais.');
     return 'https://wa.me/' + C.wpp + '?text=' + encodeURIComponent(msg);
   }
   document.querySelectorAll('.wz').forEach(function (a) {
